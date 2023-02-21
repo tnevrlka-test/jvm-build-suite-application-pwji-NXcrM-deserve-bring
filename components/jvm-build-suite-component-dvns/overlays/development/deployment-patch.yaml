@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-dvns
+  namespace: jvm-build-mjjd-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:8425efe455e6068a1c6159e9c2b1d5b1f89ff97d73e53d6f6271c84df41cdf7a
+        name: container-image
+        resources: {}
+status: {}
