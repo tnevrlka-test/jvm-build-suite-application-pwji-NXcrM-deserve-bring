@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-dvns
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:c729da9a4fee4d4e951180ce41f01834
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:8425efe455e6068a1c6159e9c2b1d5b1f89ff97d73e53d6f6271c84df41cdf7a
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
